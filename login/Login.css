@@ -1,0 +1,33 @@
+.login_container {
+    width: 30%;
+    margin: 100px auto;
+}
+
+.login_block {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.login_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.register_btn {
+    color: #333333;
+    font-size: 14px;
+}
+
+.register_btn:hover {
+    text-decoration: underline;
+}
+
+.register_tips {
+    color: #999999;
+    font-size: 14px;
+    margin: 0 5px;
+}

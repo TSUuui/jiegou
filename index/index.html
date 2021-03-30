@@ -22,29 +22,33 @@
 		<!--导航栏-->
 		<div class="nav_bar">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">商场名称</a>
+				<a class="navbar-brand" onclick="backHome()">商场名称</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 				        data-target="#navbarSupportedContent"
 				        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">链接1</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">链接2</a>
-						</li>
-					</ul>
+				<!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+				<!--	<ul class="navbar-nav mr-auto">-->
+				<!--		<li class="nav-item active">-->
+				<!--			<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>-->
+				<!--		</li>-->
+				<!--		<li class="nav-item">-->
+				<!--			<a class="nav-link" href="#">链接1</a>-->
+				<!--		</li>-->
+				<!--		<li class="nav-item">-->
+				<!--			<a class="nav-link" href="#">链接2</a>-->
+				<!--		</li>-->
+				<!--	</ul>-->
+				<!--</div>-->
+				<div class="right_info">
+					<span class="info_font clickable" onclick="toRegister()">注册</span>
+					<span class="info_font">/</span>
+					<span class="info_font clickable" onclick="toLogin()">登录</span>
 				</div>
 			</nav>
 		</div>
-
+		
 		<!--首屏图 跑马灯-->
 		<div class="banner">
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -66,7 +70,7 @@
 				</a>
 			</div>
 		</div>
-
+		
 		<!--具体内容-->
 		<div class="index_content">
 			<div class="content_block">
@@ -198,7 +202,22 @@
 				</div>
 			</div>
 		</div>
+		
+		<!--右边工具条-->
+		<div class="tools_bar">
+			<div class="btn">购物车</div>
+			<div class="btn">订单</div>
+			<div class="btn">个人中心</div>
+			<div class="btn">回顶部</div>
+		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$(function () {
+
+	})
+</script>
+<script src="../assets/commonJs.js"></script>
 </body>
 </html>

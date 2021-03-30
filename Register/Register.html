@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/3.4.0/jquery.min.js"
+	        type="application/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+	        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	        crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	        crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="Register.css">
+	<link rel="stylesheet" href="../assets/coomonCss.css">
+	<title>注册页面</title>
+</head>
+<body>
+<div class="Register">
+	<div class="wallpaper">
+		<!--导航栏-->
+		<div class="nav_bar">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" onclick="backHome()">商场名称</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+				        data-target="#navbarSupportedContent"
+				        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+				<!--	<ul class="navbar-nav mr-auto">-->
+				<!--		<li class="nav-item active">-->
+				<!--			<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>-->
+				<!--		</li>-->
+				<!--		<li class="nav-item">-->
+				<!--			<a class="nav-link" href="#">链接1</a>-->
+				<!--		</li>-->
+				<!--		<li class="nav-item">-->
+				<!--			<a class="nav-link" href="#">链接2</a>-->
+				<!--		</li>-->
+				<!--	</ul>-->
+				<!--</div>-->
+				<!--<div class="right_info">-->
+				<!--	<span class="info_font clickable">注册</span>-->
+				<!--	<span class="info_font">/</span>-->
+				<!--	<span class="info_font clickable">登录</span>-->
+				<!--</div>-->
+			</nav>
+		</div>
+		
+		<div class="register_container">
+			<div class="register_title">注册您的账号</div>
+			<div class="register_block">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">账号</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">密码</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
+					<!--<div class="form-group form-check">-->
+					<!--	<input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+					<!--	<label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+					<!--</div>-->
+					<button type="button" class="btn btn-primary">注册</button>
+					<span class="register_tips">已有账号？立刻去</span><span class="register_btn clickable" onclick="toLogin()">登录</span>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+</script>
+<script src="../assets/commonJs.js"></script>
+</body>
+</html>
