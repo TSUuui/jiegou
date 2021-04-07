@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/3.4.0/jquery.min.js"
+	        type="application/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+	        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	        crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	        crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="Profiles.css">
+	<link rel="stylesheet" href="../assets/coomonCss.css">
+	<title>会员中心</title>
+</head>
+<body>
+<div class="Profiles">
+	<div class="wallpaper">
+		<!--导航栏-->
+		<div class="nav_bar">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" onclick="backHome()">商场名称</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+				        data-target="#navbarSupportedContent"
+				        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">链接1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">链接2</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right_info">
+					<span class="info_font clickable">注册</span>
+					<span class="info_font">/</span>
+					<span class="info_font clickable">登录</span>
+				</div>
+			</nav>
+		</div>
+		<!--会员中心内容-->
+		<div class="profiles_content">
+			<!--左选部分-->
+			<div class="left" onclick="clickTab(event)">
+				<div class="tab" id="shopCar">购物车</div>
+				<div class="tab" id="myCollect">我的收藏</div>
+				<div class="tab" id="message">消息</div>
+				<div class="tab" id="acountSetting">账户设置</div>
+				<div class="tab" id="orderManage">订单管理</div>
+			</div>
+			<!--右区域部分-->
+			<div class="right">
+				<!--购物车内容-->
+				<div class="right_content shopCar">
+					购物车内容
+				</div>
+				<!--我的收藏-->
+				<div class="right_content myCollect unshow">
+					我的收藏
+				</div>
+				<!--信息-->
+				<div class="right_content message unshow">
+					信息
+				</div>
+				<!--账户设置-->
+				<div class="right_content acountSetting unshow">
+					账户设置
+				</div>
+				<!--订单管理-->
+				<div class="right_content orderManage unshow">
+					<div class="order_block">
+						<!--订单头部-->
+						<div class="order_header">
+							<!--订单时间-->
+							<div class="order_nums">订单时间：2020-04-07</div>
+							<!--订单状态-->
+							<div class="order_nums">订单状态：【运送中】</div>
+						</div>
+						<div class="order_content">
+							<!--订单图片-->
+							<div class="order_logo"></div>
+							<div class="order_container">
+								<!--订单标题-->
+								<div class="order_title">我是一个订单标题</div>
+								<div class="order_seller fg f12">店铺：【你maBiss店铺】</div>
+								<div class="order_price fg f12">价格：￥99元</div>
+								<div class="order_buyer fg f12">付款人：nimasile</div>
+							</div>
+						</div>
+					</div>
+					<div class="order_block">
+						<!--订单头部-->
+						<div class="order_header">
+							<!--订单时间-->
+							<div class="order_nums">订单时间：2020-04-07</div>
+							<!--订单状态-->
+							<div class="order_nums">订单状态：【运送中】</div>
+						</div>
+						<div class="order_content">
+							<!--订单图片-->
+							<div class="order_logo"></div>
+							<div class="order_container">
+								<!--订单标题-->
+								<div class="order_title">我是一个订单标题</div>
+								<div class="order_seller fg f12">店铺：【你maBiss店铺】</div>
+								<div class="order_price fg f12">价格：￥99元</div>
+								<div class="order_buyer fg f12">付款人：nimasile</div>
+							</div>
+						</div>
+					</div>
+					<div class="order_block">
+						<!--订单头部-->
+						<div class="order_header">
+							<!--订单时间-->
+							<div class="order_nums">订单时间：2020-04-07</div>
+							<!--订单状态-->
+							<div class="order_nums">订单状态：【运送中】</div>
+						</div>
+						<div class="order_content">
+							<!--订单图片-->
+							<div class="order_logo"></div>
+							<div class="order_container">
+								<!--订单标题-->
+								<div class="order_title">我是一个订单标题</div>
+								<div class="order_seller fg f12">店铺：【你maBiss店铺】</div>
+								<div class="order_price fg f12">价格：￥99元</div>
+								<div class="order_buyer fg f12">付款人：nimasile</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	function clickTab(e) {
+		let id = e.target.id;
+		$('.right_content').hide();
+		$(".tab").removeClass("tabActive");
+		switch (id) {
+			case 'shopCar':
+				$('.shopCar').show();
+				$("#shopCar").addClass("tabActive")
+				break;
+			case 'myCollect':
+				$('.myCollect').show();
+				$("#myCollect").addClass("tabActive")
+				break;
+			case 'message':
+				$('.message').show();
+				$("#message").addClass("tabActive")
+				break;
+			case 'acountSetting':
+				$('.acountSetting').show();
+				$("#acountSetting").addClass("tabActive")
+				break;
+			case 'orderManage':
+				$('.orderManage').show();
+				$("#orderManage").addClass("tabActive")
+				break;
+		}
+	}
+</script>
+</body>
+</html>
