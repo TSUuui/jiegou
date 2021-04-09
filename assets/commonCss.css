@@ -45,3 +45,15 @@ body {
 .clickable {
     cursor: pointer;
 }
+
+.rf {
+    color: #CA4555;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.f20 {
+    font-size: 20px;
+}
