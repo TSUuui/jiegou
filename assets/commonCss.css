@@ -57,3 +57,16 @@ body {
 .f20 {
     font-size: 20px;
 }
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.mr10{
+    margin-right: 10px;
+}

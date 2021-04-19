@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/3.4.0/jquery.min.js"
+	        type="application/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+	        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	        crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	        crossorigin="anonymous"></script>
+	<!--引入Layui-->
+	<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/layui/2.5.7/layui.all.min.js"
+	        type="application/javascript"></script>
+	<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/layui/2.5.7/css/layui.min.css" type="text/css"
+	      rel="stylesheet"/>
+	<link rel="stylesheet" href="ConfirmOrder.css">
+	<link rel="stylesheet" href="../assets/commonCss.css">
+	<title>确认订单</title>
+</head>
+<body>
+<div class="ConfirmOrder">
+	<!--导航栏-->
+	<div class="nav_bar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" onclick="backHome()">商场名称</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+			        data-target="#navbarSupportedContent"
+			        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">链接1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">链接2</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right_info">
+				<span class="info_font clickable">注册</span>
+				<span class="info_font">/</span>
+				<span class="info_font clickable">登录</span>
+			</div>
+		</nav>
+	</div>
+	<!--确认购物地址-->
+	<div class="order_address">
+		<div class="order_title">
+			<div class="title_block"></div>
+			<span class="block_title">确认收货地址</span>
+			<span class="change_address">切换地址</span>
+		</div>
+		<!--地址信息-->
+		<div class="order_content">
+			<div class="order_line mb10">
+				<div class="line_title">购买账号：</div>
+				<div class="line_value">nizaishuonimane</div>
+			</div>
+			<div class="order_line mb10">
+				<div class="line_title">收件人：</div>
+				<div class="line_value">你妈</div>
+			</div>
+			<div class="order_line mb10">
+				<div class="line_title">收件电话：</div>
+				<div class="line_value">1380000000</div>
+			</div>
+			<div class="order_line">
+				<div class="line_title">收件地址：</div>
+				<div class="line_value">广州市 / 天河区 / 下水道</div>
+			</div>
+		</div>
+	</div>
+	<!--订单信息-->
+	<div class="order_detail">
+		<div class="order_title">
+			<div class="title_block"></div>
+			<span class="block_title">确认购买信息</span>
+		</div>
+		<!--商品信息-->
+		<div class="goods_detail">
+			<div class="goods">
+				<div class="goods_pic"></div>
+				<div class="goods_info">
+					<div class="info_title">【商品名称】</div>
+					<div class="info_title">数量：2</div>
+					<div class="info_title">单价：99</div>
+				</div>
+				<!--总价-->
+				<div class="total_price">总价：<span class="price-red">198</span>元</div>
+			</div>
+			<div class="goods">
+				<div class="goods_pic"></div>
+				<div class="goods_info">
+					<div class="info_title">【商品名称】</div>
+					<div class="info_title">数量：2</div>
+					<div class="info_title">单价：99</div>
+				</div>
+				<!--总价-->
+				<div class="total_price">总价：<span class="price-red">198</span>元</div>
+			</div>
+			<div class="goods">
+				<div class="goods_pic"></div>
+				<div class="goods_info">
+					<div class="info_title">【商品名称】</div>
+					<div class="info_title">数量：2</div>
+					<div class="info_title">单价：99</div>
+				</div>
+				<!--总价-->
+				<div class="total_price">总价：<span class="price-red">198</span>元</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="purchase_bar">
+		<div class="template flex-center flex-right">
+			<div class="mr10">
+				￥<span class="all_goods_price price-red">999</span>元
+			</div>
+			<button type="button" class="btn btn-success mr10">购买</button>
+			<button type="button" class="btn btn-secondary mr10">取消</button>
+		</div>
+	</div>
+</div>
+
+
+<script src="ConfirmOrder.js"></script>
+<script src="../assets/commonJs.js"></script>
+</body>
+</html>
